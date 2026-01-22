@@ -5,8 +5,7 @@ import jax.numpy as jnp
 import jax.random as jr
 import flax.nnx as nnx
 import optax
-from configuration import GatedDeltaNetConfig
-from model import GatedDeltaNetModel
+from gated_deltanet_jax import GatedDeltaNetConfig, GatedDeltaNetModel
 from memory_monitor import PeakMemoryMonitor
 
 class GatedDeltaNetClassifier(nnx.Module):
