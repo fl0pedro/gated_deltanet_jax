@@ -6,8 +6,8 @@ import jax
 import jax.numpy as jnp
 from flax import nnx
 import numpy as np
-from gated_deltanet_jax.configuration import GatedDeltaNetConfig
-from gated_deltanet_jax.model import GatedDeltaNet, GatedDeltaNetForCausalLM
+from configuration import GatedDeltaNetConfig
+from model import GatedDeltaNet, GatedDeltaNetForCausalLM
 
 def test_layer_forward():
     print("Testing GatedDeltaNet Layer [Chunk]...")
