@@ -1,0 +1,31 @@
+[project]
+name = "gated_deltanet_jax"
+version = "0.1.0"
+description = "JAX implementation of Gated DeltaNet"
+authors = [
+    { name = "Florian", email = "florian@example.com" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jax",
+    "jaxlib",
+    "flax",
+    "optax",
+    "einops",
+    "transformers",
+    "protobuf"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "torch"]  # Torch needed for interop/benchmarks
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
